@@ -1,0 +1,20 @@
+{
+    "name": "adagio/rad",
+    "description": "RAD utilities.",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Keven",
+            "email": "keven@adagiolabs.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Adagio\\Rad\\": "src"
+        }
+    },
+    "require": {
+        "php": "^7.1"
+    }
+}
