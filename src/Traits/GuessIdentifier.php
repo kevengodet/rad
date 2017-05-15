@@ -50,7 +50,7 @@ trait GuessIdentifier
      *
      * @return ?string
      */
-    private function guessIdentifierFromArray(array $data): ?string
+    private function guessIdentifierFromArray(array $data)
     {
         $keys = array_keys($data);
         $keysMap = array_combine(array_map('strtolower', $keys), $keys);
@@ -70,7 +70,7 @@ trait GuessIdentifier
      *
      * @return ?string
      */
-    private function guessIdentifierFromObject($object): ?string
+    private function guessIdentifierFromObject($object)
     {
         foreach (['getId', 'getIdentifier', 'getPk', 'getPrimaryKey'] as $method) {
             try {

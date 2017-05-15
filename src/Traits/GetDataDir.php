@@ -9,7 +9,7 @@ trait GetDataDir
      *
      * @return string
      */
-    private function getDataDir(): string
+    private function getDataDir()
     {
         if (!$home = getenv('HOME')) {
             $dataDir = sys_get_temp_dir().'/adagio/rad/data/';

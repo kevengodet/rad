@@ -13,7 +13,7 @@ trait DataStorage
      *
      * @return mixed
      */
-    private function readData(string $filePath, $default = null)
+    private function readData($filePath, $default = null)
     {
         if (!file_exists($filePath)) {
             return $default;
@@ -27,7 +27,7 @@ trait DataStorage
      * @param mixed $data
      * @param string $filePath
      */
-    private function writeData($data, string $filePath)
+    private function writeData($data, $filePath)
     {
         file_put_contents($filePath, '<?php return '.var_export($data, true).';', LOCK_EX);
     }
